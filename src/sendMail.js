@@ -11,17 +11,26 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendMail = async (to, subject, html) => {
+const sendMail = async (req, res) => {
+  const { userMail, userName } = req.body;
   try {
     await transporter.sendMail({
-      from: `"Your App Name" ${process.env.EMAIL_ADDRESS}`,
-      to: "debacodes@gmail.com",
-      subject: "hello",
-      html: "this is a test",
+      from: `"DLCF Easter Retreat" <noreply@gmail.com>`,
+      to: userMail,
+      replyTo: "support@yourdomain.com",
+      subject: `Welcome to camp, ${userName}!`,
+      html: `
+        <h2>Hi ${userName},</h2>
+        <p>Welcome! Thanks for registering.</p>
+        <p>We’re happy to have you here.</p>
+        <p>Be blessed,<br>DLCF</p>
+      `,
     });
     console.log("Email sent successfully!");
+    res.status(200).json({ message: "Email sent successfully" });
   } catch (err) {
     console.error("Error sending email:", err);
+    res.status(500).json({ message: "Failed to send email" });
   }
 };
 
