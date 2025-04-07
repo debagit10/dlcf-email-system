@@ -1,0 +1,238 @@
+<body
+  style="
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+  "
+>
+  <div
+    style="
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    "
+  >
+    <!-- Header -->
+    <div
+      style="
+        background-color: #1a73e8;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      "
+    >
+      <h1 style="margin: 0">Retreat Registration</h1>
+    </div>
+
+    <!-- Content -->
+    <div style="padding: 20px; background-color: #ffffff; text-align: center">
+      <p style="margin-bottom: 20px">Registration successful</p>
+
+      <!-- Details Table -->
+      <table
+        style="
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px auto;
+          max-width: 500px;
+        "
+      >
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+              width: 40%;
+            "
+          >
+            Name:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              width: 60%;
+            "
+          >
+            {{surname}} {{middleName}} {{lastName}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Email:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+            "
+          >
+            {{email}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Gender:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+            "
+          >
+            {{gender}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Age Group:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+            "
+          >
+            {{age}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Participant Type:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+            "
+          >
+            {{participantType}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Academic Level:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+            "
+          >
+            {{academicLevel}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Campus:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+            "
+          >
+            {{campus}}{{otherCampus}}
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Registration ID:
+          </td>
+          <td
+            style="
+              padding: 12px 8px;
+              border-bottom: 1px solid #eee;
+              text-align: left;
+            "
+          >
+            <a
+              href="{{registrationLink}}"
+              style="color: #1a73e8; text-decoration: none"
+              >{{registrationId}}</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div
+      style="text-align: center; padding: 20px; font-size: 12px; color: #666666"
+    >
+      <p style="margin: 0 auto">
+        &copy; {{currentYear}} DLCF Lagos Registration.
+      </p>
+    </div>
+  </div>
+</body>
